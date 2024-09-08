@@ -11,6 +11,7 @@ app.use(cors());
 
 app.use(ratelimiter)
 app.use('/api', api);
+app.get('/', api);
 app.use(preventerr);
 
 const port = 1604;
